@@ -2,99 +2,140 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Ezedin | About Me</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ezedin Mohamed | Portfolio</title>
+
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(120deg, #1d2671, #c33764);
-      color: #fff;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
+
+    body {
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
     header {
-      padding: 40px 20px;
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      padding: 60px 20px;
       text-align: center;
     }
+
     header h1 {
-      font-size: 2.5em;
+      font-size: 2.5rem;
       margin-bottom: 10px;
     }
+
     header p {
-      font-size: 1.1em;
-      opacity: 0.9;
+      font-size: 1.2rem;
+      color: #dbeafe;
     }
+
     section {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-    .card {
-      background: rgba(0,0,0,0.3);
-      padding: 20px;
-      border-radius: 15px;
-      margin-bottom: 20px;
-    }
+
     h2 {
-      border-bottom: 2px solid rgba(255,255,255,0.3);
-      padding-bottom: 5px;
+      color: #60a5fa;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+
+    .card {
+      background: #020617;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
     }
-    ul li {
-      background: rgba(255,255,255,0.15);
-      margin: 8px 0;
-      padding: 10px;
-      border-radius: 8px;
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
     }
+
+    .skill {
+      background: #020617;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #1e293b;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-right: 15px;
+      margin-top: 10px;
+      color: #93c5fd;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact a:hover {
+      color: #bfdbfe;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
-      opacity: 0.8;
-      font-size: 0.9em;
+      margin-top: 50px;
+      background: #020617;
+      color: #94a3b8;
+      font-size: 0.9rem;
     }
   </style>
 </head>
+
 <body>
 
   <header>
-    <h1>Hello 👋 I'm Ezedin</h1>
-    <p>Junior Web Developer | HTML • CSS • Basic JavaScript</p>
+    <h1>Ezedin Mohamed Ahmed</h1>
+    <p>Web Developer | Hotel & Driver Professional</p>
   </header>
 
   <section>
+    <h2>About Me</h2>
     <div class="card">
-      <h2>👤 About Me</h2>
       <p>
-        I am a motivated beginner web developer learning modern web technologies.
-        I enjoy building simple, clean, and responsive websites.
-        My goal is to work with international clients and grow as a professional developer.
+        I am a motivated and reliable professional with skills in basic web development
+        (HTML & CSS) and experience in hotel services and driving.
+        I am eager to work with international clients and continuously improve my skills.
       </p>
     </div>
+  </section>
 
-    <div class="card">
-      <h2>🛠 Skills</h2>
-      <ul>
-        <li>HTML5 – Website structure</li>
-        <li>CSS3 – Styling & layouts</li>
-        <li>Responsive Design (Mobile friendly)</li>
-        <li>Basic JavaScript</li>
-        <li>Git & GitHub</li>
-      </ul>
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">Basic JavaScript</div>
+      <div class="skill">Hotel Service</div>
+      <div class="skill">Professional Driver</div>
+      <div class="skill">Communication</div>
     </div>
+  </section>
 
-    <div class="card">
-      <h2>📫 Contact</h2>
-      <ul>
-        <li>Email: ezedin.dev@gmail.com</li>
-        <li>GitHub: https://github.com/ezu-dev</li>
-      </ul>
+  <section>
+    <h2>Contact</h2>
+    <div class="card contact">
+      <p><strong>Email:</strong> ezedin.dev@gmail.com</p>
+      <p><strong>Phone:</strong> +251 950 600 556</p>
+
+      <a href="https://github.com/ezu-dev" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
     </div>
   </section>
 
   <footer>
-    © 2026 Ezedin | Built with ❤️ and GitHub Pages
+    © 2026 Ezedin Mohamed — All Rights Reserved
   </footer>
 
 </body>
